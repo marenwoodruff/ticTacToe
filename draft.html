@@ -1,0 +1,29 @@
+var inputs = document.getElementsByClassName('row');
+		for(var i = 0; i < inputs.length; i++) {
+		    inputs[i].onclick = function() {
+		        hello();
+		        this.onclick = null; // reset the handler
+		    }
+		};
+
+		function hello() {
+		    alert("You clicked on a square!");
+		};
+
+
+<input type="button" class="button1" value="Reset" onClick="window.location.reload()"/>
+
+input.button1 {
+		margin-right: 82px;
+		margin-bottom: 10px;
+	}
+
+input.button1 {
+	height: 35px;
+	width: 100px;
+	margin-right: 0px;
+}
+
+input.button1:hover {
+	background-color: red;
+}
